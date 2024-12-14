@@ -5,7 +5,12 @@
 {% endblock %}
 
 {% block body %}
- <div>
-    {{ content | safe }}
- </div>
+    <div>
+        {{ content | safe }}
+    </div>
+    <div>
+        <a href="{% url 'edit' title=title %}">
+            <button type="submit">For Edit Article</button>
+        </a>
+    </div>
 {% endblock %}
